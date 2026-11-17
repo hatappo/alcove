@@ -20,7 +20,7 @@ test('Production permissions are limited to the panel, local settings, and GAS h
   assert.match(manifest.content_security_policy.extension_pages, /script-src 'self'/);
 });
 
-test('Packaged icons cover toolbar and management sizes with the shared portal artwork', () => {
+test('Packaged icons cover toolbar and management sizes with the Alcove artwork', () => {
   const manifest = JSON.parse(readFileSync(path.join(output, 'manifest.json'), 'utf8'));
   assert.deepEqual(Object.keys(manifest.icons), ['16', '32', '48', '128']);
   assert.deepEqual(manifest.action.default_icon, manifest.icons);
@@ -30,7 +30,9 @@ test('Packaged icons cover toolbar and management sizes with the shared portal a
     assert.equal(png.readUInt32BE(16), Number(size));
     assert.equal(png.readUInt32BE(20), Number(size));
   }
-  assert.match(readFileSync(path.join(output, 'FONT-LICENSE.txt'), 'utf8'), /SIL OPEN FONT LICENSE/);
+  const license = readFileSync(path.join(output, 'FONT-LICENSE.txt'), 'utf8');
+  assert.match(license, /SIL OPEN FONT LICENSE/);
+  assert.match(license, /The Allura Project Authors/);
 });
 
 async function extensionPage(t, locale = 'en-US', width = 360) {

@@ -2,7 +2,12 @@
 
 All notable changes to Alcove are documented here. Versions follow Semantic Versioning. GitHub releases are development builds; Chrome Web Store publication has not started.
 
-## Unreleased
+## [0.2.0] - 2026-11-17
+
+### Changed
+
+- Replace the inherited P icon with an outlined Allura A on a pale cream-and-gold background.
+- Match the footer wordmark to the warm icon palette, with light, dark, and blackout colors.
 
 ### Fixed
 
@@ -27,3 +32,5 @@ All notable changes to Alcove are documented here. Versions follow Semantic Vers
 - Content remains hidden until session visibility settings are restored successfully.
 
 [0.1.0]: https://github.com/hatappo/alcove/releases/tag/v0.1.0
+
+[0.2.0]: https://github.com/hatappo/alcove/compare/v0.1.0...v0.2.0

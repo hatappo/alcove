@@ -4,11 +4,12 @@ under the MIT license retained in LICENSE.
 Lucide external-link, refresh-cw, settings, eye, and eye-off icons retain
 their ISC and applicable MIT notices in extension/assets/*.svg and the bundle.
 
-The initial P icon retains the portal artwork. Its glyph is derived from
-Libre Baskerville, copyright 2012 The Libre Baskerville Project Authors,
+The Alcove A icon uses an outlined glyph from Allura,
+copyright 2010 The Allura Project Authors (https://github.com/googlefonts/allura),
 licensed under SIL Open Font License 1.1. The full license is retained in
 extension/assets/FONT-LICENSE.txt and included in the extension build.
-Only the glyph outline is included, not the font binary.
+Only the glyph outline is included, not the font binary. The cream/gold
+background and icon composition are maintained as SVG source.
 
 WXT, Svelte, Skeleton, Tailwind CSS and other npm dependencies retain their
 respective upstream licenses.
