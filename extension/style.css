@@ -8,7 +8,7 @@ body { margin: 0; font-family: system-ui, sans-serif; color: var(--color-surface
 * { box-sizing: border-box; }
 #app { height: 100dvh; display: flex; flex-direction: column; }
 footer { flex: none; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; padding: 4px 8px; border-top: 1px solid var(--color-surface-200-800); }
-.extension-name { font-size: 10px; font-weight: 400; color: var(--color-surface-600-400); white-space: nowrap; }
+.extension-name { font-size: 10px; font-weight: 400; color: light-dark(#896431, #f3d99b); white-space: nowrap; }
 nav { display: flex; gap: 4px; }
 .btn { font-size: 12px; padding: 4px 8px; min-height: 30px; }
 main { padding: 20px 16px; overflow-y: auto; }
@@ -37,7 +37,7 @@ iframe { flex: 1; width: 100%; min-height: 0; border: 0; background: var(--color
 .panel-body { flex: 1; min-width: 0; display: flex; flex-direction: column; background: var(--color-surface-50-950); }
 .panel-content.concealed .panel-body { visibility: hidden; pointer-events: none; }
 footer.concealed { background: #000; border-color: #000; }
-footer.concealed .extension-name { color: #737373; }
+footer.concealed .extension-name { color: #9f875f; }
 footer.concealed .icon-button { color: #a3a3a3; background: transparent; }
 footer.concealed .icon-button:hover:not(:disabled) { color: #fff; background: #262626; }
 footer.concealed .icon-button:disabled { opacity: 0.25; }

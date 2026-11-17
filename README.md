@@ -65,4 +65,4 @@ Tags must match `package.json`. Pushing a `v*` tag publishes a development ZIP o
 
 ## License
 
-MIT. Alcove was extracted from [gas-portal](https://github.com/hatappo/gas-portal), retaining the original license and the initial P artwork. See [NOTICE](NOTICE) for icon and font attribution.
+MIT. Alcove was extracted from [gas-portal](https://github.com/hatappo/gas-portal), retaining the original license. Its icon is a cursive A on a pale sunlit background. See [NOTICE](NOTICE) for icon and font attribution.
