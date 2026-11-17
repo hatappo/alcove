@@ -36,10 +36,14 @@ jobs:
       - run: npx --no-install playwright install --with-deps chromium
       - run: npm run test:browser
       - run: npm run zip
+      - name: Stage release archive
+        run: |
+          mkdir -p release
+          cp extension/.output/alcove-*-chrome.zip release/
       - uses: actions/upload-artifact@v7.0.2
         with:
           name: extension
-          path: extension/.output/alcove-*-chrome.zip
+          path: release/alcove-*-chrome.zip
           if-no-files-found: error
   publish:
     needs: package

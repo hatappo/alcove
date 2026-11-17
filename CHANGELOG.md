@@ -2,6 +2,12 @@
 
 All notable changes to Alcove are documented here. Versions follow Semantic Versioning. GitHub releases are development builds; Chrome Web Store publication has not started.
 
+## Unreleased
+
+### Fixed
+
+- Stage extension archives outside hidden build directories for GitHub Actions artifact upload.
+
 ## [0.1.0] - 2026-11-17
 
 ### Added
