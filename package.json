@@ -1,0 +1,46 @@
+{
+  "name": "alcove",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Keep your favorite web apps beside your browser tabs.",
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "npm@12.2.2",
+  "engines": {
+    "node": ">=26.13.1 <27",
+    "npm": ">=12.2.2"
+  },
+  "scripts": {
+    "dev": "wxt extension",
+    "build": "wxt build extension",
+    "zip": "wxt zip extension",
+    "lint": "oxlint",
+    "typecheck": "wxt prepare extension && svelte-check --tsconfig ./extension/tsconfig.json",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "npm run build && node --test tests/extension/*.test.mjs",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "@skeletonlabs/skeleton": "5.0.1",
+    "@sveltejs/vite-plugin-svelte": "7.3.1",
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "26.6.6",
+    "@wxt-dev/module-svelte": "2.0.5",
+    "oxlint": "1.89.0",
+    "playwright": "1.64.1",
+    "svelte": "5.57.3",
+    "svelte-check": "4.7.8",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3",
+    "wxt": "0.21.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hatappo/alcove.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hatappo/alcove/issues"
+  },
+  "homepage": "https://github.com/hatappo/alcove#readme"
+}

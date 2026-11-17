@@ -1,0 +1,23 @@
+name: CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '26'
+          check-latest: true
+          cache: npm
+      - run: npm install --global npm@12.2.2
+      - run: npm ci
+      - run: npm run check
+      - run: npx --no-install playwright install --with-deps chromium
+      - run: npm run test:browser
